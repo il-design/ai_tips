@@ -1,0 +1,244 @@
+@charset "utf-8";
+body{
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif;
+    -webkit-text-size-adjust: none;
+}
+#wrap{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #7C3B1E;
+    font-size: 15px;
+    text-align: justify;
+	text-justify: inter-ideograph;
+}
+
+/*スマホでは消す*/
+.pc-dN{
+	display:none!important;
+}
+.btn-trigger{
+	display:none!important;
+}
+/*ヘッダー*/
+header{
+	
+}
+
+
+
+
+/*左と右を囲う全体のエリア*/
+#wrapper{
+  position: relative;/*position stickyの基点にするため relativeをかける*/
+    display: flex;/*左エリア、右エリア横並び指定*/
+  flex-wrap: wrap;/*ボックスの折り返し可*/
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*左エリア*/
+#fixed-area{
+  /*左固定記述*/
+    position: -webkit-sticky;/*Safari用*/
+    position: sticky;
+  top:0;
+  /*横半分50%　縦を100vhにする*/
+  width: 50%;
+  height: 100vh;
+  /*装飾のためのCSS*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #B0E0E6;
+  color:#fff;
+}
+
+/*右エリア*/
+#container{
+  /*横半分50%にする*/
+  width:50%;
+}
+/*右各セクション 装飾のためのCSS*/
+section{
+  min-height: 100vh;
+  padding:30px;
+}
+
+section:nth-of-type(2n){
+/*装飾のためのCSS*/
+  background:#eee;
+}
+/*＝＝＝＝＝＝＝＝＝＝＝768px以下の見え方＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+@media screen and (max-width:768px){
+#wrapper{
+  display: block;/*display:flex;を解除*/
+}
+section{
+  min-height:auto;/*縦を100vh⇒解除*/
+}
+
+#fixed-area{
+    position:relative!important;/*position stickyを解除*/
+  width:100%;/*横幅を100%にして1列に見せる*/
+  height: 40vh;/*縦幅を100vh⇒40vh　※任意の高さに設定可能*/
+}
+
+#container{
+  width:100%;/*横幅を100%にして1列に見せる*/
+}
+}
+
+
+
+.box {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+    font-size: 30px;
+    letter-spacing: 0.15em;
+    color: #B0E0E6;
+    font-family: 'Klee One', cursive;
+    
+}
+
+h2 {
+  font-size: 40px;
+    letter-spacing: 0.2em;
+}
+
+h2 span {
+  font-family: 'Azeret Mono', monospace;
+    font-size: 50px;
+      font-weight: 800;
+    letter-spacing: 0.2em;
+}
+
+
+
+
+h1 {
+  font-size: 40px;
+    letter-spacing: 0.2em;
+}
+  
+h1 span {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 50px;
+      font-weight: 800;
+    letter-spacing: 0.2em;
+    padding: .25em 0 .325em;
+    display: block;
+    margin: 0 auto;
+
+
+/* Clip Background Image */
+
+    background: url(../images/back.png) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+/* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+
+  }
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+View Compiled
+Resources
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* スマホだけに適用するCSS */
+    @media only screen and (max-width:768px){
+
+    html {
+        margin-top: 0px !important;
+    }
+
+    /*スマホでは消す*/
+    .sp-dN{
+        display:none !important;
+    }
+    .pc-dN{
+        display: block!important;
+    }
+
+    body{
+        width:100%;
+        min-width:380px;
+        height:100%;
+    }
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+
+
+
+
